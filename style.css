@@ -1,0 +1,176 @@
+:root {
+  --purple-dark: #4b2e83;
+  --purple-main: #7c5cff;
+  --purple-light: #efeaff;
+  --purple-accent: #b9a7ff;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: var(--purple-dark);
+}
+
+.logo {
+  color: white;
+  font-weight: 600;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--purple-accent);
+}
+
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7c5cff, #b9a7ff);
+  color: white;
+  text-align: center;
+}
+
+
+.hero span {
+  background: white;
+  color: var(--purple-main);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: white;
+  color: var(--purple-main);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--purple-dark);
+  color: white;
+}
+
+
+/* Sections */
+section {
+  padding: 70px 50px;
+  text-align: center;
+  background-color: var(--purple-light);
+}
+
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects {
+  background-color: #fdfcff;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: nowrap; /* keeps cards horizontal */
+}
+
+
+
+
+.project-card {
+  width: 320px;           /* VERY IMPORTANT */
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(124, 92, 255, 0.15);
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+}
+
+
+.project-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #7c5cff, #b9a7ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(124, 92, 255, 0.3);
+}
+
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.45);
+}
+
+
+/* Contact */
+.contact p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: var(--purple-dark);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+@media (max-width: 900px) {
+  .project-grid {
+    flex-wrap: wrap; /* stacks nicely on mobile */
+  }
+}
+
+
